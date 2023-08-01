@@ -1,0 +1,19 @@
+header {
+  color: blue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-decoration: underline blue 2px;
+}
+
+/* este es el estilo de mis datos */
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  text-decoration: underline black 1px;
+}
+
+li {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
