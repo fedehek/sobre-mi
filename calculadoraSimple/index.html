@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Simple</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+    <div class="box">
+      <aside>
+        <h2>Instrucciones de uso</h2>
+
+        <ol>
+          <li>Colocá un numero en Operador 1.</li>
+          <li>Luego tocá la operación que quieras realizar. Por ej. "+".</li>
+          <li>Colocá otro número en el Operador 2.</li>
+          <li>Por ultimo toca el "=" para obtener el resultado.</li>
+          <li>
+            Para resetear tu calculadora y realizar una nueva operacion toca
+            "C".
+          </li>
+        </ol>
+      </aside>
+
+      <main>
+        <div class="operando">
+          <input type="number" id="num1" placeholder="Operador 1" />
+        </div>
+
+        <div class="botones1">
+          <button id="sumar" class="numero">+</button>
+          <button id="restar" class="numero">-</button>
+          <button id="multiplicar" class="numero">x</button>
+          <button id="dividir" class="numero">/</button>
+        </div>
+
+        <div>
+          <input type="number" id="num2" placeholder="Operador 2" />
+        </div>
+
+        <div class="botones2">
+          <button id="borrar" class="numero">C</button>
+          <button id="calcular" class="numero enter">=</button>
+        </div>
+        <div class="resultado">
+          <input
+            type="text"
+            class="salida"
+            id="result"
+            readonly
+            placeholder="Resultado"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="calculadora.js"></script>
+  </body>
+</html>
