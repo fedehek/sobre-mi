@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+:root {
+  --clr-gold: #c2384b;
+  --clr-beige: #cfa13d;
+  --clr-purple: #3d3d1d;
+}
+
+body {
+  background: linear-gradient(white, red);
+  color: rgb(207, 9, 9);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.instrucciones {
+  margin-bottom: 2rem;
+}
+
+.marcador {
+  background-color: rgb(194, 25, 25);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: yellow;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+  position: absolute;
+  color: white;
+  background-color: blue;
+  line-height: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid blue;
+}
+
+.marcador .nombre-jugador {
+  right: 85%;
+}
+
+.marcador .nombre-computadora {
+  left: 85%;
+}
+
+.marcador .puntos {
+  font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+  margin-bottom: 2rem;
+}
+
+.elegi-tu-arma h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.armas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.arma {
+  font-size: 2rem;
+  background-color: rgb(205, 182, 50);
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.arma:hover {
+  transform: scale(1.1);
+  background-color: yellowgreen;
+}
+
+.mensaje {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.mensaje .eleccion {
+  color: white;
+  background-color: rgb(43, 55, 226);
+  border-radius: 0.25rem;
+  padding-inline: 0.25rem;
+}
+
+.btn {
+  border: 0;
+  line-height: 1;
+  background-color: yellowgreen;
+  color: var(--clr-purple);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.disabled {
+  display: none;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(240, 137, 137);
+  color: black;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
